@@ -10,7 +10,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [editId, setEditId] = useState(null);
 
-  const API_URL = const API_URL = "https://student-management-system-kjac.onrender.com/students";
+  const API_URL = "https://student-management-system-kjac.onrender.com/students";
 
   useEffect(() => {
     fetchStudents();
