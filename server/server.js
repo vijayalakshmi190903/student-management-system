@@ -51,3 +51,8 @@ app.put("/students/:id", async (req, res) => {
 
   res.json(updatedStudent);
 });
+
+app.get("/students", async (req, res) => {
+  const students = await Student.find();
+  res.json(students);
+});
